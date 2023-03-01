@@ -1,0 +1,28 @@
+body {
+  background-color: var(--color-gray-600);
+}
+
+.header {
+  background-color: var(--color-gray-700);
+  color: var(--color-gray-200);
+  padding: 4.5rem 0rem 5rem;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: fit-content;
+  height: fit-content;
+  gap: 8px;
+  margin: auto;
+}
+
+.logo h1 {
+  color: var(--color-blue);
+  font-size: 2.5rem;
+}
+
+.logo span {
+  color: var(--color-purple-dark);
+}

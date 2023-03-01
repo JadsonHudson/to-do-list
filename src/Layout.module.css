@@ -1,0 +1,36 @@
+.container {
+  width: 100%;
+  max-width: 46rem;
+  margin: -1.7rem auto 10rem;
+  padding: 0 1rem;
+}
+
+.field {
+  display: flex;
+  gap: 8px;
+}
+
+.field input {
+  width: 100%;
+  padding: 1rem;
+  border: 1px solid var(--color-gray-700);
+  border-radius: 8px;
+  background-color: var(--color-gray-600);
+
+  color: var(--color-white);
+}
+
+.field button {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 1rem;
+  background-color: var(--color-blue-dark);
+  border-radius: 8px;
+
+  font-size: 0.875rem;
+  font-weight: bold;
+  color: var(--color-gray-100);
+
+  cursor: pointer;
+}
