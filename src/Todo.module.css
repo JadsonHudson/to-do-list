@@ -1,34 +1,6 @@
-.containerTodo {
-  width: 100%;
-}
-
-.titlesTodo {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  margin-top: 1.5rem;
-  padding: 1.5rem 0px;
-}
-
-.titlesTodo strong {
-  color: var(--color-blue);
-}
-
-.titlesTodo strong:nth-child(2) {
-  color: var(--color-purple);
-}
-
-.titlesTodo span {
-  margin-right: .5rem;
-  padding: 2px 8px;
-  border-radius: 999px;
-  background-color: var(--color-gray-400);
-  color: var(--color-gray-200);
-}
-
 .todoElement {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   justify-content: space-between;
   margin-top: .5rem;
   padding: 1rem;
@@ -40,7 +12,7 @@
   color: var(--color-gray-100);
 }
 
-.todoElement label, .todoElement input, .todoElement button {
+.todoElement label, .todoElement input, .todoElement button, .todoElement svg {
   cursor: pointer;
 }
 
@@ -56,6 +28,8 @@
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
+  font-size: .875rem;
+  line-height: 1.4;
 }
 
 /* Hide the browser's default checkbox */
@@ -70,7 +44,7 @@
 /* Create a custom checkbox */
 .checkmark {
   position: absolute;
-  top: 16px;
+  top: 0px;
   left: 0;
   border-radius: 50%;
   height: 20px;
@@ -109,7 +83,7 @@
 
 .container:has(input[type="checkbox"]:checked) {
   text-decoration: line-through;
-
+  color: var(--color-gray-300);
 }
 
 /* Style the checkmark/indicator */
@@ -125,10 +99,25 @@
   transform: rotate(45deg);
 }
 
-/* .todoElement input {}
+.todoElement button {
+  display: flex;
+  align-items: center;
+  padding: 5px;
+  border-radius: 8px;
 
-.todoElement label {} */
+  cursor: pointer;
+  transition: all .2s;
+}
 
 .todoElement button svg {
   color: var(--color-gray-300);
+  transition: all .2s;
+}
+
+.todoElement button:hover {
+  background-color: var(--color-gray-400);
+}
+
+.todoElement button:hover svg {
+  color: var(--color-danger);
 }
